@@ -3,3 +3,4 @@
 ## Package pour le multi-lang
 - i18next
 - react-i18next
+- i18next-http-backend

@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    padding: 1ch;
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+    align-items: center;
+
+    .title {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+.option {
+    display: flex;
+    flex-direction: row;
+    gap: 1ch;
+    font-size: 1em;
+    height: 2em;
+    align-items: center;
+
+    img {
+        height: 100%;
+        object-fit: fill;
+    }
+}

@@ -14,7 +14,10 @@ const NavBar = () => {
                     <Link to='/about'>{t('nav.about')}</Link>
                 </li>
                 <li>
-                    <Link to='/jo'>Error :o</Link>
+                    <Link to='/book'>{t('nav.book')}</Link>
+                </li>
+                <li>
+                    <Link to='/fred'>Error :o</Link>
                 </li>
             </ul>
         </nav>

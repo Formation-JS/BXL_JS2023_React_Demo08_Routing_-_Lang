@@ -1,17 +1,16 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import Header from './containers/header/header.jsx'
-import { useTranslation } from 'react-i18next';
-import HomePage from './pages/home/home.page.jsx';
+import NavBar from './containers/nav-bar/nav-bar.jsx'
 
 function App() {
-
-  const { t } = useTranslation();
 
   return (
     <>
       <Header />
       <main>
-        
+        <NavBar />
+        <Outlet />
       </main>
     </>
   )

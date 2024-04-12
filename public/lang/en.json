@@ -7,7 +7,21 @@
 
     "nav": {
         "home": "Home",
-        "about": "About"
+        "about": "About",
+        "book": "Book"
+    },
+
+    "book": {
+        "title": "Book",
+        "table" :{
+            "name":"Name",
+            "price" : "Price",
+            "category":"Category",
+            "detail": "Detail"
+        },
+        "detail": {
+            "title":"detail of {BookId}"
+        }
     },
 
     "home": {

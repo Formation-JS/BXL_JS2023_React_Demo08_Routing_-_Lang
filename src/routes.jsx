@@ -1,5 +1,8 @@
 import App from './App.jsx';
+import PrivateRoute from './containers/routing/private-route.jsx';
 import AboutPage from './pages/about/about.page.jsx';
+import LoginPage from './pages/auth/login.page.jsx';
+import LogoutPage from './pages/auth/logout.page.jsx';
 import BookPage from './pages/books/book.page.jsx';
 import BookDetailPage from './pages/books/pages/book-details-page.jsx';
 import BookTablePage from './pages/books/pages/book-table.page.jsx';
@@ -13,7 +16,7 @@ export const routes = [
         element: <App />, // Le composant App est utilisé comme un layout
         children: [
             {
-                index:true,
+                index: true,
                 element: <HomePage />
             },
             {
@@ -26,7 +29,9 @@ export const routes = [
             },
             {
                 path: 'book',
-                element: <BookPage />,
+                element: (
+                    <PrivateRoute element={<BookPage />} />      
+                ),
                 children: [
                     {
                         index: true,
@@ -40,9 +45,16 @@ export const routes = [
                         path: 'not-found',
                         element: <BookNotFoundPage />
                     },
-                ] 
+                ]
+            },
+            {
+                path: 'login',
+                element: <LoginPage />
+            },
+            {
+                path: 'logout',
+                element: <LogoutPage />
             }
-            
         ]
     },
 ]
